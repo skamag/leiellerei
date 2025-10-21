@@ -3,40 +3,141 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lei eller ei</title>
-    <style>
-      .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .calculator {
-        background-color: rgb(116, 187, 156);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-      }
-    </style>
+    <title>Lei eller ei?</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="container">
       <form class="calculator">
-        <div>
-          <label for="">Inntekt</label>
-          <input type="number" />
-        </div>
-        <div>
-          <label for=""></label>
-          <input type="number" />
-        </div>
-        <div>
-          <label for=""></label>
-          <input type="number" />
-        </div>
+        <section class="home-purchase">
+          <h1>Eie bolig</h1>
+          <div>
+            <p>Pris bolig:</p>
+            <input type="number" value="4000000" />
+            <p>kr</p>
+          </div>
+          <div>
+            <p>Egenkapital:</p>
+            <input type="number" value="600000" />
+            <p>kr</p>
+          </div>
+          <div>
+            <p>Rente boliglån:</p>
+            <input type="number" value="5" />
+            <p>%</p>
+          </div>
+          <div>
+            <p class="sub-category">- Rentefradrag:</p>
+            <input type="number" value="22" />
+            <p>%</p>
+          </div>
+          <div>
+            <p>Nedbetalingstid:</p>
+            <input type="number" value="25" />
+            <p>år</p>
+          </div>
+          <div>
+            <p>Årlig verdistigning:</p>
+            <input type="number" value="4" />
+            <p>%</p>
+          </div>
+
+          <div class="sub-group-margin">
+            <p>Strøm og TV/internet årlig:</p>
+            <input type="number" value="16000" />
+            <p>kr</p>
+          </div>
+          <div>
+            <p>Vedlikehold årlig:</p>
+            <input type="number" value="16000" />
+            <p>kr</p>
+          </div>
+          <div>
+            <p>Kommunale avgifter:</p>
+            <input type="number" value="8000" />
+            <p>kr</p>
+          </div>
+          <div>
+            <p>Forsikring årlig:</p>
+            <input type="number" value="4000" />
+            <p>kr</p>
+          </div>
+          <div>
+            <p>Eiendomsskatt:</p>
+            <input type="number" value="0" />
+            <p>%</p>
+          </div>
+
+          <div class="sub-group-margin">
+            <p>Dokumentavgift:</p>
+            <input type="number" value="2.5" />
+            <p>%</p>
+          </div>
+          <div>
+            <p>Salgskostnader:</p>
+            <input type="number" value="80000" />
+            <p>kr</p>
+          </div>
+        </section>
+        <section class="left-section">
+          <h1>Leie bolig</h1>
+          <div>
+            <p>Årlig leie:</p>
+            <input type="number" value="200000" />
+            <p>kr</p>
+          </div>
+          <div>
+            <p>Strøm og TV/internett:</p>
+            <input type="number" value="0" />
+            <p>kr</p>
+          </div>
+          <div>
+            <p>Årlig leieøkning:</p>
+            <input type="number" value="2.1" />
+            <p>%</p>
+          </div>
+          <div>
+            <p>Depositum:</p>
+            <input type="number" value="50000" />
+            <p>kr</p>
+          </div>
+          <div class="sub-group-margin">
+            <p>Penger på sparekonto:</p>
+            <input type="number" value="100000" />
+            <p>kr</p>
+          </div>
+          <div>
+            <p class="sub-category">- Rente:</p>
+            <input type="number" value="4" />
+            <p>%</p>
+          </div>
+          <div class="sub-group-margin">
+            <p>Investeringer:</p>
+            <input type="number" value="500000" />
+            <p>kr</p>
+          </div>
+          <div>
+            <p class="sub-category">- Avkastning:</p>
+            <input type="number" value="7" />
+            <p>%</p>
+          </div>
+          <div>
+            <p class="sub-category">- Skatt:</p>
+            <input type="number" value="37.78" />
+            <p>%</p>
+          </div>
+          <h1>Annet</h1>
+          <div>
+            <p>Inflasjon:</p>
+            <input type="number" value="2.1" />
+            <p>%</p>
+          </div>
+          <div class="button-container">
+            <button type="submit">Regn ut</button>
+          </div>
+        </section>
       </form>
     </div>
-    <script></script>
+    <script src="./app.js"></script>
   </body>
 </html>

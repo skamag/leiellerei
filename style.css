@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(37, 37, 59);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.calculator {
+  background-color: rgb(116, 187, 156);
+  padding: 1rem;
+  display: flex;
+  gap: 2rem;
+  border-radius: 0.25rem;
+}
+.calculator section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.calculator section div {
+  display: flex;
+  gap: 0.5rem;
+}
+.calculator section div p {
+  text-wrap: nowrap;
+}
+.calculator section div input {
+  width: 100%;
+  height: fit-content;
+  text-align: right;
+  padding: 0;
+}
+.calculator .sub-group-margin {
+  margin-top: 1rem;
+}
+.calculator .sub-category {
+  margin-left: 1rem;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.button-container button {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .calculator {
+    flex-direction: column;
+  }
+}
